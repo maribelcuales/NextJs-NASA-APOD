@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,8 +13,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Image 
+          className="nasa-logo"
+          src="/images/nasa-logo.png"
+          alt="Nasa Logo"
+          height={144}
+          width={280} 
+        />
         <h1 className={styles.title}>
-          NASA Astronomy Photo of the Day
+          NASA Photo of the Day
         </h1>
 
         <p className={styles.description}>
