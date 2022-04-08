@@ -25,6 +25,44 @@ export default function Home({ nasaPhoto }) {
         <h1 className={styles.title}>Astronomy Photo of the Day</h1>
 
         <PhotoCard nasaPhoto={nasaPhoto} />
+
+        <div className={styles.grid}>
+          <a
+            href="https://apod.nasa.gov/apod/image/2204/M24_APOD_GabrielRodriguesSantosAPOD.jpg"
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.card}
+          >
+            <h2>HD Resolution</h2>
+          </a>
+
+          <a
+            href="https://www.nasa.gov/multimedia/imagegallery/index.html"
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.card}
+          >
+            <h2>NASA Image Gallery</h2>
+          </a>
+
+          <a
+            href="https://www.nasa.gov/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.card}
+          >
+            <h2>NASA Website</h2>
+          </a>
+
+          <a
+            href="https://www.nasa.gov/nasa-at-home-be-a-scientist"
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.card}
+          >
+            <h2>Be a Scientist!</h2>
+          </a>
+        </div>
       </main>
 
       <footer className={styles.footer}>
