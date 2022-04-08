@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import nasaLogo from "../public/images/nasa-logo.png";
 import PhotoCard from "../components/photoCard";
 
 export default function Home({ nasaPhoto }) {
@@ -15,21 +16,21 @@ export default function Home({ nasaPhoto }) {
       </Head>
 
       <main className={styles.main}>
-        <Image
-          className="nasa-logo"
-          src="/images/nasa-logo.png"
-          alt="Nasa Logo"
-          height={144}
-          width={280}
-        />
-        <h1 className={styles.title}>Astronomy Photo of the Day</h1>
-
-        <PhotoCard nasaPhoto={nasaPhoto} />
-
+          <Image
+            className="nasa-logo"
+            src={nasaLogo}
+            alt="Nasa Logo"
+            height={144}
+            width={280}
+          />
+          <h1 className={styles.title}>Astronomy Photo of the Day</h1>
+    
+          <PhotoCard nasaPhoto={nasaPhoto} />
+        
         <div className={styles.grid}>
           <a
             href="https://apod.nasa.gov/apod/image/2204/M24_APOD_GabrielRodriguesSantosAPOD.jpg"
-            target="_blank" 
+            target="_blank"
             rel="noreferrer"
             className={styles.card}
           >
@@ -38,7 +39,7 @@ export default function Home({ nasaPhoto }) {
 
           <a
             href="https://www.nasa.gov/multimedia/imagegallery/index.html"
-            target="_blank" 
+            target="_blank"
             rel="noreferrer"
             className={styles.card}
           >
@@ -56,7 +57,7 @@ export default function Home({ nasaPhoto }) {
 
           <a
             href="https://www.nasa.gov/nasa-at-home-be-a-scientist"
-            target="_blank" 
+            target="_blank"
             rel="noreferrer"
             className={styles.card}
           >
